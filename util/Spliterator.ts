@@ -1,5 +1,5 @@
 import Consumer from './function/Consumer'
-interface Spliterator<T> {
+export default interface Spliterator<T> {
     tryAdvance(action: Consumer<T>): boolean;
     forEachRemaining(action: Consumer<T>): void;
     trySplit(): Spliterator<T>;
@@ -8,5 +8,4 @@ interface Spliterator<T> {
     characteristics(): number;
     hasCharacteristics(characteristics:number): boolean;
     getComparator(t: T): Consumer<T>;
-    // TODO
 }
