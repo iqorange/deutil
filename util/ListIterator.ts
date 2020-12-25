@@ -1,5 +1,5 @@
 import Iterator from "./Iterator"
-interface ListIterator<E> extends Iterator<E> {
+export default interface ListIterator<E> extends Iterator<E> {
     add(e: E): void;
     hasPrevious(): boolean;
     nextIndex(): number;
