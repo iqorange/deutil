@@ -1,4 +1,5 @@
 import Iterable from '../lang/Iterable'
+import Iterator from './Iterator'
 
 export default interface Collection<E> extends Iterable<E> {
     size(): number;
