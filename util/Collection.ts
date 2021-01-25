@@ -1,5 +1,7 @@
-import Iterable from '../lang/Iterable'
-import Iterator from './Iterator'
+// @ts-ignore
+import Iterable from '../lang/Iterable.ts'
+// @ts-ignore
+import Iterator from './Iterator.ts'
 
 export default interface Collection<E> extends Iterable<E> {
     size(): number;
