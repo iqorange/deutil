@@ -9,7 +9,7 @@ export default class Stack<E> {
         return item;
     }
 
-    public pop(): E {
+    public pop(): E | undefined {
         return this.stack.pop();
     }
 
@@ -23,5 +23,19 @@ export default class Stack<E> {
 
     public search(o: E): number {
         return this.stack.indexOf(o);
+    }
+
+    public toString(): string {
+        let str: string = "[";
+        for(let e of this.stack) {
+            str = str + e + ", ";
+        }
+        str = str.substring(0, str.length - 2);
+        str += "]";
+        return str;
+    }
+
+    public println(): void {
+        console.log(this.toString());
     }
 }
