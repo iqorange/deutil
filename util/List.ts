@@ -1,8 +1,8 @@
-import Collection from "./Collection"
-import Iterator from "./Iterator"
-import Comparator from "./Comparator"
-import ListIterator from "./ListIterator";
-import Spliterator from "./Spliterator";
+import Collection from "./Collection.ts"
+import Iterator from "./Iterator.ts"
+import Comparator from "./Comparator.ts"
+import ListIterator from "./ListIterator.ts";
+import Spliterator from "./Spliterator.ts";
 
 export default interface List<E> extends Collection<E> {
     size(): number;

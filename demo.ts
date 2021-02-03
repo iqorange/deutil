@@ -8,4 +8,4 @@ stack1.push(3);
 stack1.pop();
 stack1.println();
 let sca = new Scanner();
-console.log(Deno.args);
+console.log(sca.next());

@@ -1,4 +1,3 @@
-// @ts-ignore
 import Iterator from "./Iterator.ts"
 export default interface ListIterator<E> extends Iterator<E> {
     add(e: E): void;

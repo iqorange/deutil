@@ -1,6 +1,6 @@
 export default interface Comparator<T> {
     compare(o1: T, o2: T): number;
-    equals(obj: T);
+    equals(obj: T): boolean;
     reversed(): Comparator<T>;
     thenComparing(other: Comparator<T>): Comparator<T>;
     reverseOrder(): Comparator<T>;
