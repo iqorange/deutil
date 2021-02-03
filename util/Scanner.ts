@@ -5,13 +5,31 @@ export default class Scanner{
             this.scaQueue.push(e);
         }
     }
-    public next(): string{
+
+    public hasNext(): boolean{
         if (this.scaQueue.length > 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public next(): string{
+        if (this.hasNext()){
             let sh = this.scaQueue.shift();
             if(typeof sh === "string"){
                 return sh;
             }
         }
         return "";
+    }
+
+    public nextNumber(): number | undefined{
+        if (this.hasNext()) {
+            let sh = this.scaQueue.shift();
+            if (!isNaN(Number(sh))) {
+                return Number(sh);
+            }
+        }
     }
 }
