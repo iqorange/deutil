@@ -1,4 +1,3 @@
-// @ts-ignore
 import Consumer from './function/Consumer.ts'
 export default interface Spliterator<T> {
     tryAdvance(action: Consumer<T>): boolean;

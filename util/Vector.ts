@@ -1,5 +1,5 @@
-import AbstractList from './AbstractList'
-import List from './List'
+import AbstractList from './AbstractList.ts'
+import List from './List.ts'
 
 export default class Vector<E> extends AbstractList<E> {
 // TODO
